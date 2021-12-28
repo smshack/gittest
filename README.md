@@ -44,5 +44,45 @@ git reset HEAD
 - 브랜치란: 기존 내용을 유지한 채로 새로운 내용을 추가하고 싶을 때 사용한다
 - checkout: 특정 브랜치(혹은 커밋) 으로 돌아가고 싶을 때 사용
 
+## 브런치 사용하기
+https://velog.io/@qkqhqhrh11/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%B0%8F-%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%82%AC%EC%9A%A9%EB%B2%95
 
-## 4. 추가된 내용입니다
+https://hanyeop.tistory.com/132
+```
+// 브런치 생성
+git branch tree1
+
+// 브런치 생성 확인
+git branch -a
+
+// 생성한 브런치로 활성화
+git checkout tree1
+
+작업 후 add , commit, push
+
+새로운 브런치 생성 확인
+
+// 브런치 병합하기
+// 병합되지 않은 브런치 확인
+git branch --merged
+
+// 마스터 브런치로 변경 후
+git checkout master
+
+// 병합하고 싶은 브런치를 병합
+git merge tree1
+
+// 브런치 삭제 하기
+git branch -d 브런치명
+
+// 원격 저장소에 있는 브런치도 삭제
+git push remote명 --delete 브런치명
+
+```
+브런치 연습 사이트
+
+https://learngitbranching.js.org/?locale=ko
+## 4. 병합이란
+하나의 브랜치를 다른 브런치랑 합치는 것
+
+충돌나게 한번 만들어 보자
