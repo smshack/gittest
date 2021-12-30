@@ -1,5 +1,3 @@
-# hello git
-
 # 절차
 1. git 가입
 2. github 저장소 생성
@@ -101,8 +99,15 @@ https://learngitbranching.js.org/?locale=ko
 git reset --hard db80d44caae67744c850786efaddd414b545ae01
 git reset --hard 에 해당하는 명령으로 커밋을 되돌리기
 reset 이후 push는 force 옵션을 선택해야 함
-이전 커밋은 사라짐
+이전 커밋은 사라짐  주의 !!!!
 push --force 는 소스트리에서 지원하지 않기 때문에 CLI를 이용해야 함
 git push origin +master
 강제로 push 가 필요함
+
+장점: 쉽다
+단점: 커밋이 날아간다. push --force 가 필요하다.
 ```
+
+
+## 6. 새로운 브런치를 만들어서 커밋 되돌리기
+브랜치로 되돌리는 기능 테스트해보자
