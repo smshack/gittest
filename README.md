@@ -96,3 +96,13 @@ https://learngitbranching.js.org/?locale=ko
 - 제일 중요한점 : 겁내지 말기
 
 
+## 5. 깃 리셋이 필요
+```
+git reset --hard db80d44caae67744c850786efaddd414b545ae01
+git reset --hard 에 해당하는 명령으로 커밋을 되돌리기
+reset 이후 push는 force 옵션을 선택해야 함
+이전 커밋은 사라짐
+push --force 는 소스트리에서 지원하지 않기 때문에 CLI를 이용해야 함
+git push origin +master
+강제로 push 가 필요함
+```
